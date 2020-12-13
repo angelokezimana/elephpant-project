@@ -1,5 +1,5 @@
-# elephpant-project
+# Elephpant project
 
-## it's coming soon. Stay Tuned.
+## It's coming soon. Stay Tuned.
 
-### the big thing isn't yet come
+### The best hasn't come yet
