@@ -1,0 +1,17 @@
+{
+    "name": "angelokezimana/elephpant-project",
+    "type": "project",
+    "description": "The PHP MVC Framework",
+    "authors": [
+        {
+            "name": "Kezimana Aimé Angelo",
+            "email": "kezangelo@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "app\\": "./"
+        }
+    },
+    "require": {}
+}
