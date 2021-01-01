@@ -3,6 +3,7 @@
 namespace app\controllers;
 
 use app\core\Controller;
+use app\core\Request;
 
 /**
  * Class PageController
@@ -29,8 +30,8 @@ class PageController extends Controller
         return $this->render('contact');
     }
 
-    public function saveContact()
+    public function saveContact(Request $request)
     {
-        return 'Contact saved!';
+        var_dump($request->getBody());
     }
 }
