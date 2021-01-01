@@ -48,6 +48,10 @@ class Router
             return $this->renderView($callback);
         }
 
+        if (is_array($callback)) {
+            $callback = [new $callback[0], $callback[1]];
+        }
+
         return call_user_func($callback);
     }
 
