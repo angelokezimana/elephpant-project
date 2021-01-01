@@ -2,7 +2,7 @@
 
 namespace app\controllers;
 
-use app\core\Application;
+use app\core\Controller;
 
 /**
  * Class PageController
@@ -10,23 +10,23 @@ use app\core\Application;
  * @author Kezimana Aimé Angelo <kezangelo@gmail.com>
  * @package app\controllers
  */
-class PageController
+class PageController extends Controller
 {
     public function home()
     {
-        return Application::$app->router->renderView('home', [
+        return $this->render('home', [
             'name' => 'Best man Angelo'
         ]);
     }
 
     public function about()
     {
-        return Application::$app->router->renderView('about');
+        return $this->render('about');
     }
 
     public function contact()
     {
-        return Application::$app->router->renderView('contact');
+        return $this->render('contact');
     }
 
     public function saveContact()
