@@ -2,16 +2,12 @@
 
 use app\core\Application;
 
-require_once __DIR__.'/../vendor/autoload.php';
+require_once dirname(__DIR__).'/vendor/autoload.php';
 
-$app = new Application();
+$app = new Application(dirname(__DIR__));
 
-$app->router->get('/', function(){
-    return "Hello World";
-});
+$app->router->get('/', 'home');
 
-$app->router->get('/About', function(){
-    return "This is my first framework. Enjoy!";
-});
+$app->router->get('/About', 'about');
 
 $app->run();
