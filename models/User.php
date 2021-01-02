@@ -38,6 +38,16 @@ class User extends DbModel
         return ['full_name', 'email', 'status', 'password'];
     }
 
+    public function labels():array
+    {
+        return [
+            'full_name' => 'Full name', 
+            'email' => 'E-mail',
+            'password' => 'Password',
+            'confirm_password' => 'Confirm password'
+        ];
+    }
+
     public function rules(): array
     {
         return [
