@@ -2,7 +2,7 @@
 
 namespace app\models;
 
-use app\core\DbModel;
+use app\core\UserModel;
 
 /**
  * Class User
@@ -10,7 +10,7 @@ use app\core\DbModel;
  * @author Kezimana Aimé Angelo <kezangelo@gmail.com>
  * @package app\models
  */
-class User extends DbModel
+class User extends UserModel
 {
     const STATUS_INACTIVE = 0;
     const STATUS_ACTIVE = 1;
@@ -33,19 +33,29 @@ class User extends DbModel
         return 'users';
     }
 
+    public function primaryKey(): string
+    {
+        return 'id';
+    }
+
     public function attributes(): array
     {
         return ['full_name', 'email', 'status', 'password'];
     }
 
-    public function labels():array
+    public function labels(): array
     {
         return [
-            'full_name' => 'Full name', 
+            'full_name' => 'Full name',
             'email' => 'E-mail',
             'password' => 'Password',
             'confirm_password' => 'Confirm password'
         ];
+    }
+
+    public function getDisplayName():string
+    {
+        return $this->full_name;
     }
 
     public function rules(): array

@@ -34,7 +34,7 @@ class LoginForm extends Model
 
     public function login()
     {
-        $user = User::findOne(['email' => $this->email]);
+        $user = (new User)->findOne(['email' => $this->email]);
 
         if (!$user) {
             $this->addError('email', 'User does not exist !');
