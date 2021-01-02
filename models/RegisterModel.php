@@ -12,10 +12,10 @@ use app\core\Model;
  */
 class RegisterModel extends Model
 {
-    public string $full_name;
-    public string $email;
-    public string $password;
-    public string $confirm_password;
+    public string $full_name = '';
+    public string $email = '';
+    public string $password = '';
+    public string $confirm_password = '';
 
     public function register()
     {
