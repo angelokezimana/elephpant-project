@@ -2,8 +2,11 @@
 
 namespace app\controllers;
 
-use app\core\Controller;
 use app\core\Request;
+use app\core\Controller;
+use app\core\Application;
+use app\core\Response;
+use app\models\ContactForm;
 
 /**
  * Class PageController
@@ -16,7 +19,7 @@ class PageController extends Controller
     public function home()
     {
         return $this->render('home', [
-            'name' => 'Best man Angelo'
+            'name' => 'Elephpant Project'
         ]);
     }
 
@@ -25,13 +28,17 @@ class PageController extends Controller
         return $this->render('about');
     }
 
-    public function contact()
+    public function contact(Request $request, Response $response)
     {
-        return $this->render('contact');
-    }
+        $contact = new ContactForm();
+        if ($request->isPost()) {
+            $contact->loadData($request->getBody());
 
-    public function saveContact(Request $request)
-    {
-        var_dump($request->getBody());
+            if ($contact->validate() && $contact->send()) {
+                Application::$app->session->setFlash('success', 'Thanks for contacting us. We gonna give you an answer very soon.');
+                return $response->redirect('/contact');
+            }
+        }
+        return $this->render('contact', ['model' => $contact]);
     }
 }
