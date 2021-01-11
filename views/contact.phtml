@@ -6,18 +6,11 @@ $this->title = 'Contact'
 ?>
 <h1>ELEPHPANT Project - contact</h1>
 
-<form method="post">
-    <div class="form-group">
-        <label>Subject</label>
-        <input type="text" name="subject" class="form-control">
-    </div>
-    <div class="form-group">
-        <label>E-mail</label>
-        <input type="email" name="email" class="form-control">
-    </div>
-    <div class="form-group">
-        <label>Body</label>
-        <textarea name="body" class="form-control"></textarea>
-    </div>
+<?php $form = \app\core\form\Form::begin('', "post"); ?>
+
+    <?= $form->field($model, 'subject') ?>
+    <?= $form->field($model, 'email') ?>
+    <?= new \app\core\form\TextareaField($model, 'body') ?>
     <button type="submit" class="btn btn-info">Submit</button>
-</form>
+
+<?php \app\core\form\Form::end(); ?>
