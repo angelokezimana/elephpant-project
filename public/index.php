@@ -25,8 +25,7 @@ $app->router->get('/', [PageController::class, 'home']);
 $app->router->get('/About', [PageController::class, 'about']);
 
 $app->router->get('/contact', [PageController::class, 'contact']);
-
-$app->router->post('/contact', [PageController::class, 'saveContact']);
+$app->router->post('/contact', [PageController::class, 'contact']);
 
 $app->router->get('/login', [AuthController::class, 'login']);
 $app->router->post('/login', [AuthController::class, 'login']);
