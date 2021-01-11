@@ -7,7 +7,7 @@ use app\core\Model;
 
 /**
  * Class LoginForm
- * }
+ * 
  * @author Kezimana Aimé Angelo <kezangelo@gmail.com>
  * @package app\models
  */
