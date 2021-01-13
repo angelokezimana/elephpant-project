@@ -1,6 +1,9 @@
 <?php
 
-namespace app\core;
+namespace app\core\db;
+
+use app\core\Model;
+use app\core\Application;
 
 /**
  * Class DbModel
