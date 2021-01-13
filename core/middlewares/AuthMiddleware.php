@@ -1,15 +1,15 @@
 <?php
 
-namespace app\core\middlewares;
+namespace angelokezimana\elephpant\middlewares;
 
-use app\core\Application;
-use app\core\exception\ForbiddenException;
+use angelokezimana\elephpant\Application;
+use angelokezimana\elephpant\exception\ForbiddenException;
 
 /**
  * Class AuthMiddleware
  * 
  * @author Kezimana Aimé Angelo <kezangelo@gmail.com>
- * @package app\core\middlewares
+ * @package angelokezimana\elephpant\middlewares
  */
 class AuthMiddleware extends BaseMiddleware
 {

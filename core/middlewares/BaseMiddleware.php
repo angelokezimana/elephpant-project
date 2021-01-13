@@ -1,12 +1,12 @@
 <?php
 
-namespace app\core\middlewares;
+namespace angelokezimana\elephpant\middlewares;
 
 /**
  * Class BaseMiddleware
  * 
  * @author Kezimana Aimé Angelo <kezangelo@gmail.com>
- * @package app\core\middlewares
+ * @package angelokezimana\elephpant\middlewares
  */
 abstract class BaseMiddleware
 {

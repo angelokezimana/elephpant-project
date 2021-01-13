@@ -30,7 +30,7 @@
                     <a class="nav-link" href="/contact">Contact us</a>
                 </li>
             </ul>
-            <?php if (\app\core\Application::isGuest()) : ?>
+            <?php if (\angelokezimana\elephpant\Application::isGuest()) : ?>
                 <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
                     <li class="nav-item">
                         <a class="nav-link" href="/login">Login</a>
@@ -48,7 +48,7 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="/logout">Welcome <?= \app\core\Application::$app->user->getDisplayName() ?>
+                        <a class="nav-link" href="/logout">Welcome <?= \angelokezimana\elephpant\Application::$app->user->getDisplayName() ?>
                             (Logout)
                         </a>
                     </li>
@@ -59,9 +59,9 @@
 
     <div class="container">
 
-        <?php if (\app\core\Application::$app->session->getFlash('success')) : ?>
+        <?php if (\angelokezimana\elephpant\Application::$app->session->getFlash('success')) : ?>
             <div class="alert alert-success">
-                <?= \app\core\Application::$app->session->getFlash('success') ?>
+                <?= \angelokezimana\elephpant\Application::$app->session->getFlash('success') ?>
             </div>
         <?php endif; ?>
 

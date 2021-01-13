@@ -1,12 +1,12 @@
 <?php
 
-namespace app\core\exception;
+namespace angelokezimana\elephpant\exception;
 
 /**
  * Class ForbiddenException
  * 
  * @author Kezimana Aimé Angelo <kezangelo@gmail.com>
- * @package app\core\exception
+ * @package angelokezimana\elephpant\exception
  */
 class ForbiddenException extends \Exception
 {

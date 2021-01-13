@@ -1,12 +1,12 @@
 <?php
 
-namespace app\core\exception;
+namespace angelokezimana\elephpant\exception;
 
 /**
  * Class NotFoundException
  * 
  * @author Kezimana Aimé Angelo <kezangelo@gmail.com>
- * @package app\core\exception
+ * @package angelokezimana\elephpant\exception
  */
 class NotFoundException extends \Exception
 {

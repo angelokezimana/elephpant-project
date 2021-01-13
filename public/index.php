@@ -2,7 +2,7 @@
 
 use app\controllers\AuthController;
 use app\controllers\PageController;
-use app\core\Application;
+use angelokezimana\elephpant\Application;
 
 require_once dirname(__DIR__) . '/vendor/autoload.php';
 

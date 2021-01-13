@@ -1,14 +1,14 @@
 <?php
 
-namespace app\core\db;
+namespace angelokezimana\elephpant\db;
 
-use app\core\Application;
+use angelokezimana\elephpant\Application;
 
 /**
  * Class Database
  * 
  * @author Kezimana Aimé Angelo <kezangelo@gmail.com>
- * @package app\core\db
+ * @package angelokezimana\elephpant\db
  */
 class Database
 {

@@ -1,15 +1,15 @@
 <?php
 /**
- * @var $this \app\core\View
+ * @var $this \angelokezimana\elephpant\View
  */
 $this->title = 'Login'
 ?>
 <h1>Login</h1>
 
-<?php $form = \app\core\form\Form::begin('', "post"); ?>
+<?php $form = \angelokezimana\elephpant\form\Form::begin('', "post"); ?>
 
     <?= $form->field($model, 'email') ?>
     <?= $form->field($model, 'password')->passwordField() ?>
     <button type="submit" class="btn btn-info">Submit</button>
 
-<?php \app\core\form\Form::end(); ?>
+<?php \angelokezimana\elephpant\form\Form::end(); ?>

@@ -1,14 +1,14 @@
 <?php
 
-namespace app\core;
+namespace angelokezimana\elephpant;
 
-use app\core\db\DbModel;
+use angelokezimana\elephpant\db\DbModel;
 
 /**
  * Class UserModel
  * 
  * @author Kezimana Aimé Angelo <kezangelo@gmail.com>
- * @package app\core
+ * @package angelokezimana\elephpant
  */
 abstract class UserModel extends DbModel
 {

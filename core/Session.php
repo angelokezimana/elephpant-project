@@ -1,12 +1,12 @@
 <?php
 
-namespace app\core;
+namespace angelokezimana\elephpant;
 
 /**
  * Class Session
  * 
  * @author Kezimana Aimé Angelo <kezangelo@gmail.com>
- * @package app\core
+ * @package angelokezimana\elephpant
  */
 class Session
 {

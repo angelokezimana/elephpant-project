@@ -1,12 +1,12 @@
 <?php
 
-namespace app\core;
+namespace angelokezimana\elephpant;
 
 /**
  * Class Request
  * 
  * @author Kezimana Aimé Angelo <kezangelo@gmail.com>
- * @package app\core
+ * @package angelokezimana\elephpant
  */
 class Request
 {

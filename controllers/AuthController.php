@@ -3,12 +3,12 @@
 namespace app\controllers;
 
 use app\models\User;
-use app\core\Request;
-use app\core\Response;
-use app\core\Controller;
-use app\core\Application;
+use angelokezimana\elephpant\Request;
+use angelokezimana\elephpant\Response;
+use angelokezimana\elephpant\Controller;
+use angelokezimana\elephpant\Application;
 use app\models\LoginForm;
-use app\core\middlewares\AuthMiddleware;
+use angelokezimana\elephpant\middlewares\AuthMiddleware;
 
 /**
  * Class AuthController

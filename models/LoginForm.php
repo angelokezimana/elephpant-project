@@ -2,8 +2,8 @@
 
 namespace app\models;
 
-use app\core\Application;
-use app\core\Model;
+use angelokezimana\elephpant\Application;
+use angelokezimana\elephpant\Model;
 
 /**
  * Class LoginForm

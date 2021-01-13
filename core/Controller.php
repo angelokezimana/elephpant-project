@@ -1,14 +1,14 @@
 <?php
 
-namespace app\core;
+namespace angelokezimana\elephpant;
 
-use app\core\middlewares\BaseMiddleware;
+use angelokezimana\elephpant\middlewares\BaseMiddleware;
 
 /**
  * Class Controller
  * 
  * @author Kezimana Aimé Angelo <kezangelo@gmail.com>
- * @package app\core
+ * @package angelokezimana\elephpant
  */
 class Controller
 {
@@ -16,7 +16,7 @@ class Controller
     public string $action = '';
 
     /**
-     * @var \app\core\middlewares\BaseMiddleware[]
+     * @var \angelokezimana\elephpant\middlewares\BaseMiddleware[]
      */
     protected array $middlewares = [];
 

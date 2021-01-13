@@ -1,14 +1,14 @@
 <?php
 
-namespace app\core;
+namespace angelokezimana\elephpant;
 
-use app\core\exception\NotFoundException;
+use angelokezimana\elephpant\exception\NotFoundException;
 
 /**
  * Class Router
  * 
  * @author Kezimana Aimé Angelo <kezangelo@gmail.com>
- * @package app\core
+ * @package angelokezimana\elephpant
  */
 class Router
 {
@@ -51,7 +51,7 @@ class Router
 
         if (is_array($callback)) {
             /**
-             * @var \app\core\Controller $controller
+             * @var \angelokezimana\elephpant\Controller $controller
              */
             $controller = new $callback[0]();
             Application::$app->controller = $controller;

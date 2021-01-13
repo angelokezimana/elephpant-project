@@ -1,16 +1,16 @@
 <?php
 /**
- * @var $this \app\core\View
+ * @var $this \angelokezimana\elephpant\View
  */
 $this->title = 'Contact'
 ?>
 <h1>ELEPHPANT Project - contact</h1>
 
-<?php $form = \app\core\form\Form::begin('', "post"); ?>
+<?php $form = \angelokezimana\elephpant\form\Form::begin('', "post"); ?>
 
     <?= $form->field($model, 'subject') ?>
     <?= $form->field($model, 'email') ?>
-    <?= new \app\core\form\TextareaField($model, 'body') ?>
+    <?= new \angelokezimana\elephpant\form\TextareaField($model, 'body') ?>
     <button type="submit" class="btn btn-info">Submit</button>
 
-<?php \app\core\form\Form::end(); ?>
+<?php \angelokezimana\elephpant\form\Form::end(); ?>

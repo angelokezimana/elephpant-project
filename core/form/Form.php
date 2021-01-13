@@ -1,14 +1,14 @@
 <?php
 
-namespace app\core\form;
+namespace angelokezimana\elephpant\form;
 
-use app\core\Model;
+use angelokezimana\elephpant\Model;
 
 /**
  * Class Form
  * 
  * @author Kezimana Aimé Angelo <kezangelo@gmail.com>
- * @package app\core\form
+ * @package angelokezimana\elephpant\form
  */
 class Form
 {

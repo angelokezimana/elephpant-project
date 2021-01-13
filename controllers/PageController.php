@@ -2,10 +2,10 @@
 
 namespace app\controllers;
 
-use app\core\Request;
-use app\core\Controller;
-use app\core\Application;
-use app\core\Response;
+use angelokezimana\elephpant\Request;
+use angelokezimana\elephpant\Controller;
+use angelokezimana\elephpant\Application;
+use angelokezimana\elephpant\Response;
 use app\models\ContactForm;
 
 /**

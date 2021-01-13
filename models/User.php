@@ -2,7 +2,7 @@
 
 namespace app\models;
 
-use app\core\UserModel;
+use angelokezimana\elephpant\UserModel;
 
 /**
  * Class User

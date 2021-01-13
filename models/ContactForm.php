@@ -2,7 +2,7 @@
 
 namespace app\models;
 
-use app\core\Model;
+use angelokezimana\elephpant\Model;
 
 /**
  * Class ContactForm
