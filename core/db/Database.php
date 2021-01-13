@@ -8,7 +8,7 @@ use app\core\Application;
  * Class Database
  * 
  * @author Kezimana Aimé Angelo <kezangelo@gmail.com>
- * @package app\core
+ * @package app\core\db
  */
 class Database
 {

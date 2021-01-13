@@ -9,7 +9,7 @@ use app\core\Application;
  * Class DbModel
  * 
  * @author Kezimana Aimé Angelo <kezangelo@gmail.com>
- * @package app\core
+ * @package app\core\db
  */
 abstract class DbModel extends Model
 {
