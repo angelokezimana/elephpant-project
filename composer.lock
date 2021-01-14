@@ -4,8 +4,42 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "915a77bd7b033c4284e389b37c3689e9",
+    "content-hash": "c93145cf779b58eef4738b0c97b24f3a",
     "packages": [
+        {
+            "name": "angelokezimana/elephpant-project",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/angelokezimana/elephpant-project-core.git",
+                "reference": "76c248abb9697d2010e4266b977c87f06c8d17b6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/angelokezimana/elephpant-project-core/zipball/76c248abb9697d2010e4266b977c87f06c8d17b6",
+                "reference": "76c248abb9697d2010e4266b977c87f06c8d17b6",
+                "shasum": ""
+            },
+            "type": "project",
+            "autoload": {
+                "psr-4": {
+                    "angelokezimana\\elephpant\\": "."
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Kezimana Aimé Angelo",
+                    "email": "kezangelo@gmail.com"
+                }
+            ],
+            "description": "The PHP MVC Framework",
+            "support": {
+                "issues": "https://github.com/angelokezimana/elephpant-project-core/issues",
+                "source": "https://github.com/angelokezimana/elephpant-project-core/tree/v1.0.0"
+            },
+            "time": "2021-01-13T23:46:54+00:00"
+        },
         {
             "name": "graham-campbell/result-type",
             "version": "v1.0.1",

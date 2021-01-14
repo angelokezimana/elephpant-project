@@ -1,6 +1,5 @@
 {
-    "name": "angelokezimana/elephpant-project",
-    "type": "project",
+    "name": "angelokezimana/app",
     "description": "The PHP MVC Framework",
     "authors": [
         {
@@ -10,10 +9,11 @@
     ],
     "autoload": {
         "psr-4": {
-            "angelokezimana\\elephpant\\": "."
+            "app\\": "."
         }
     },
     "require": {
-        "vlucas/phpdotenv": "^5.2"
+        "vlucas/phpdotenv": "^5.2",
+        "angelokezimana/elephpant-project": "^1.0"
     }
 }
