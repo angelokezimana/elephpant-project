@@ -1,6 +1,6 @@
 <?php
 
-use app\core\Application;
+use angelokezimana\elephpant\Application;
 
 require_once __DIR__ . '/vendor/autoload.php';
 
