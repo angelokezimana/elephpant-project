@@ -3,12 +3,13 @@
 namespace app\controllers;
 
 use app\models\User;
+use app\models\LoginForm;
 use angelokezimana\elephpant\Request;
 use angelokezimana\elephpant\Response;
 use angelokezimana\elephpant\Controller;
 use angelokezimana\elephpant\Application;
-use app\models\LoginForm;
 use angelokezimana\elephpant\middlewares\AuthMiddleware;
+use angelokezimana\elephpant\middlewares\GuestMiddleware;
 
 /**
  * Class AuthController
@@ -21,6 +22,7 @@ class AuthController extends Controller
     public function __construct()
     {
         $this->registerMiddleware(new AuthMiddleware(['profile']));
+        $this->registerMiddleware(new GuestMiddleware(['login', 'register'], '/profile'));
     }
 
     public function login(Request $request, Response $response)
