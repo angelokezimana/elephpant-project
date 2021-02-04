@@ -9,12 +9,19 @@
     ],
     "autoload": {
         "psr-4": {
-            "app\\": "."
+            "app\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "tests\\": "tests/"
         }
     },
     "require": {
         "vlucas/phpdotenv": "^5.2",
-        "angelokezimana/elephpant-project-core": "^1.0",
+        "angelokezimana/elephpant-project-core": "^1.0"
+    },
+    "require-dev": {
         "phpunit/phpunit": "^9.5"
     }
 }
